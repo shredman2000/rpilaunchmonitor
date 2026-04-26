@@ -48,3 +48,7 @@ Working on a DIY launch monitor.
 - Raspberry Pi 3b bottleneck
   - Consider offloading computations to external server
 
+
+
+## Other things to explore
+- Long exposure on camera with very fast strobe. Use strobe as clock to determine timestamps.
