@@ -19,7 +19,8 @@ Working on a DIY launch monitor.
 - Lighting, possible strobe
 - Sound trigger sensor (TBD)
   
-<img width="960" height="720" alt="Untitled drawing" src="https://github.com/user-attachments/assets/fa35548b-ea49-4134-add3-721317c1ed55" />
+<img width="960" height="720" alt="Untitled drawing (1)" src="https://github.com/user-attachments/assets/815878d5-05a7-40ef-9644-41af4d6d5057" />
+
 
 ## System Architecture
 1. Cameras continuously capture frames and stream them to the RPI
