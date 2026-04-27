@@ -51,22 +51,20 @@ def run_tests(camera_index):
     print(f"=== Camera {camera_index} config sweep ===\n")
 
     configs = [
-        # (width, height, fps, exposure)
-        # Baseline
+
         (1280, 800,  100, None),
 
-        # Lower resolution — does fps improve?
+
         (800,  600,  100, None),
         (640,  480,  100, None),
         (320,  240,  100, None),
 
-        # Push fps harder at low res
+
         (640,  480,  200, None),
         (320,  240,  200, None),
         (320,  240,  300, None),
 
-        # Short exposures at full res (values are log2 seconds on most drivers,
-        # so -7 = 1/128s, -10 = 1/1024s, -13 = 1/8192s)
+
         (1280, 800,  100, -7),
         (1280, 800,  100, -10),
         (1280, 800,  100, -13),

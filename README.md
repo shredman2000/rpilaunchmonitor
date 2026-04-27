@@ -52,3 +52,16 @@ Working on a DIY launch monitor.
 
 ## Other things to explore
 - Long exposure on camera with very fast strobe. Use strobe as clock to determine timestamps.
+
+
+
+## stuff
+- record short clip 
+  - ffmpeg -f dshow -video_size 1280x800 -framerate 100 -i video="Arducam OV9281 USB Camera" -c copy output#.avi
+  - ffmpeg -vsync 0 -i output6.avi frames/frame_%05d.png 
+
+
+## Log 4/27
+- Ran live demo using single camera on RPI 3b, the camera is clearly a bottleneck, on 100fps with a 0.005 shutter length we only saw 2-3 frames with the golf ball visible on a chip shot. 
+- The 1gb gpu also will not allow anything other than handling the video.
+- With these notes in mind, I think the next step would be to upgrade to a single RPI 5 or two RPI 4s. At which point we would need to also find improved cameras.
